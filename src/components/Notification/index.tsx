@@ -42,7 +42,7 @@ function Notification() {
             </span>
             <div>
                 <span>Get notified of new messages</span>
-                <small>Turn on desktop notifications ></small>
+                <small>Turn on desktop notifications {">"}</small>
             </div>
         </Container>
     );

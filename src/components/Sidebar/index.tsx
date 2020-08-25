@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import  SidebarHeader  from "../SidebarHeader";
 import  Notification  from "../Notification";
+import ConversationSearch from '../ConversationSearch';
 
 const Container = styled.div`
     display: flex;
@@ -18,6 +19,7 @@ function Sidebar() {
         <Container>
             <SidebarHeader />
             <Notification />
+            <ConversationSearch />
         </Container>
     );
 }
