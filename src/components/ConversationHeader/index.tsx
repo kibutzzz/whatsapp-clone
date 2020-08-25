@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaUser } from 'react-icons/fa';
+import { FaUsers } from 'react-icons/fa';
 import { FiPaperclip } from 'react-icons/fi';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { GoSearch } from 'react-icons/go';
@@ -61,7 +61,7 @@ function ConversationHeader() {
     return (
         <Container>
             <span id="UserImageContainer">
-                <FaUser size={24} color={"#888"} />
+                <FaUsers size={24} color={"#888"} />
             </span>
             <div id="info">
                 <span><strong>Group name</strong></span>
