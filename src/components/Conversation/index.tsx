@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ConversationHeader from '../ConversationHeader';
 
 
 const Container = styled.div`
@@ -10,7 +11,11 @@ const Container = styled.div`
 
 
 function Conversation() {
-    return <Container>Conversation</Container>;
+    return (
+        <Container>
+            <ConversationHeader />
+        </Container>
+    );
 }
 
 export default Conversation;
