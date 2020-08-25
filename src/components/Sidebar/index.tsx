@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import  SidebarHeader  from "../SidebarHeader";
 import  Notification  from "../Notification";
 import ConversationSearch from '../ConversationSearch';
+import ChatItem from '../ChatItem';
 
 const Container = styled.div`
     display: flex;
@@ -10,7 +11,6 @@ const Container = styled.div`
     width: 420px;
     height: 100%;
 
-    background-color: #AAA;
 `;
 
 
@@ -20,6 +20,10 @@ function Sidebar() {
             <SidebarHeader />
             <Notification />
             <ConversationSearch />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
         </Container>
     );
 }
