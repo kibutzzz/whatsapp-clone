@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import  SidebarHeader  from "../SidebarHeader";
 
 const Container = styled.div`
     display: flex;
@@ -15,7 +15,7 @@ const Container = styled.div`
 function Sidebar() {
     return (
         <Container>
-            Sidebar
+            <SidebarHeader />
         </Container>
     );
 }
