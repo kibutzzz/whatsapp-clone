@@ -12,6 +12,14 @@ const Container = styled.div`
     flex-direction: column;
 
     overflow-y: scroll;
+
+    @media(max-width: 1000px) {
+        padding: 16px 32px;
+    }
+
+    @media(max-width: 800px) {
+        padding: 16px;
+    }
 `;
 
 function Chat() {
@@ -46,7 +54,7 @@ function Chat() {
             <Message isMine={true} />
             <Message isMine={true} />
             <Message />
-            <Message isMine={true} />
+            <Message isMine={true} imageUrl={"https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"}/>
         </Container>
     )
 }

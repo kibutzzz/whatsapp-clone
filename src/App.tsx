@@ -31,10 +31,15 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 400px;
 
   width:100vw;
   max-width: 1400px;
   height: 95vh;
+
+  @media (max-width: 1400px) {
+    height: 100vh;
+  }
 
   background: #FFF;
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import  SidebarHeader  from "../SidebarHeader";
-import  Notification  from "../Notification";
+import SidebarHeader from "../SidebarHeader";
+import Notification from "../Notification";
 import ConversationSearch from '../ConversationSearch';
 import ChatItem from '../ChatItem';
 
@@ -13,6 +13,11 @@ const Container = styled.div`
 
 `;
 
+const ChatWrapper = styled.div` 
+    overflow-y: scroll;
+    flex-grow: 1;
+`;
+
 
 function Sidebar() {
     return (
@@ -20,10 +25,20 @@ function Sidebar() {
             <SidebarHeader />
             <Notification />
             <ConversationSearch />
-            <ChatItem />
-            <ChatItem />
-            <ChatItem />
-            <ChatItem />
+            <ChatWrapper>
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+                <ChatItem />
+
+                <ChatItem />
+            </ChatWrapper>
         </Container>
     );
 }
